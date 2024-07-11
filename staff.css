@@ -1,0 +1,107 @@
+.body {
+    font-family: Roboto, sans-serif;
+    margin: 20px;
+}
+.header {
+    font-size: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+.header_purple {
+    color: #702fad;
+    margin: 30px 0px;
+}
+.search {
+    display: flex;
+    width: 100%;
+}
+.search__container {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.search__input {
+    font-size: 16px;
+    padding: 13px 12px 14px 12px;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background: transparent;
+    border-right: none;
+    transition: 0.05s ease;
+    z-index: 1;
+}
+.search__input_purple {
+    border: 2px solid #9932a8;
+    border-right: none;
+}
+.search__label_line {
+    position: absolute;
+    padding: 15px 12px;
+    color: grey;
+    margin: 0px 4px;
+    transition: 0.2s ease;
+    background-color: white;
+}
+.search__input:focus{
+  color: black;
+  border: 3px solid #9932a8;
+  padding: 13px 12px 14px 12px;
+  border-right: none;
+}
+.search__input:focus + .search__label_line,
+.search__input:valid + .search__label_line {
+  color: #9932a8;
+  height: 2px;
+  line-height: 2px;
+  transform: translate(-5px, -20px) scale(0.88);
+  z-index: 1;
+}
+.search__input:hover{
+    border: 3px solid #702fad;
+    border-right: none;
+}
+.search__input:hover + .search__label_line{
+    color: #702fad;
+}
+.search__button {
+    width: 60px;
+    padding: 18.5px 18.5px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    position: relative;
+}
+.search__button_purple {
+    background-color: #9932a8;
+    color:white;
+    border: none;
+}
+.search__button:hover {
+    background-color: #702fad;
+}
+.table {
+    border-collapse: collapse;
+    border: 1px solid grey;
+    width: 100%;
+}
+.table_purple {
+    margin: 20px 0px;
+}
+.table_purple tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.table__head_purple {
+    background-color: #f2f2f2;
+}
+.table__cell {
+    padding: 15px 0px 15px 15px;
+    font-size: 16px;
+    text-align: left;
+}
+.table__cell_number {
+    width: 5%;
+}
